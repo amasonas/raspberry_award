@@ -1,0 +1,99 @@
+{
+  "info": {
+    "_postman_id": "11d7f2e2-647f-4c59-aaeb-8c755977d5a7",
+    "name": "RaspberyyAward",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Movie",
+      "item": [
+        {
+          "name": "Create",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n \"year\": 193,\n \"title\": \"Movie Title\",\n \"studios\": [\"Studio1\",\"Studio2\"],\n \"producers\": [\"Producer1\", \"Producer2\"],\n \"winner\": true\n}"
+            },
+            "url": "{{host}}movies/"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n \"year\": 193,\n \"title\": \"Movie Title\",\n \"studios\": [\"Studio1\",\"Studio2\"],\n \"producers\": [\"Producer1\", \"Producer2\"],\n \"winner\": true\n}"
+            },
+            "url": "{{host}}movies/"
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "Prize Range",
+      "item": [
+        {
+          "name": "Range prize",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": ""
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "321ba9d4-bed6-4940-8b84-74d625e6b9e9",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "bdcc247f-0046-4035-b55c-1377a4442899",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "36619e36-65b4-4e28-b0f6-11b36e94e421",
+      "key": "host",
+      "value": "http://localhost:8081/",
+      "type": "string"
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
