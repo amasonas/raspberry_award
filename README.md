@@ -34,7 +34,7 @@ Parâmetro: Enviar JSON no seguinte padrão:
 }
 ```
 
-retorno: Registro criado
+Retorno: Registro criado
 ```
 {
   "id": 199,
@@ -70,7 +70,7 @@ URL:http://{baseurl}/movies/{ID}
 
 Parâmetro: Enviar na URL o id do filme.
 
-retorno: Registro excluído
+Retorno: Registro excluído
 ```
 {
   "id": 199,
@@ -107,7 +107,7 @@ URL:http://{baseurl}/range_prize
 
 Parâmetro: -
 
-retorno: 
+Retorno: 
 ```
 {
   "min": [
