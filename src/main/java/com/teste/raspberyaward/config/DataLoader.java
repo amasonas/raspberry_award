@@ -29,7 +29,7 @@ public class DataLoader implements ApplicationRunner {
 
         validate(movieList);
 
-        if (movieList != null && !movieList.isEmpty()) {
+        if (!movieList.isEmpty()) {
             List<Movie> movies = movieFactory.create(movieList);
 
             movieService.saveAll(movies);
