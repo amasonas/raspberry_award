@@ -12,7 +12,7 @@ Lembrando que o mesmo deve seguir o seguinte padrão, contando com o cabeçalho:
 
 | year | title | studios | producers | winner |
 | ---- | ----- | ------- | --------- | ------ |
-|      |       |         |           |        |
+|  1980|Can't Stop the Music       |Associated Film Distribution |Allan Carr|yes        |
 
 ## Endpoints
 
