@@ -28,8 +28,9 @@ public class ExcelReader {
             InputStream inputStream = resource.getInputStream();
             byte[] bdata = FileCopyUtils.copyToByteArray(inputStream);
             String data = new String(bdata, StandardCharsets.UTF_8);
+            String lineDelimiter = data.indexOf("\r\n") > -1 ? "\r\n" : "\n";
 
-            return Arrays.asList(data.split("\r\n"));
+            return Arrays.asList(data.split(lineDelimiter));
         } catch (FileNotFoundException exception) {
             logger.error("The movielist.csv file was not found in the resources folder");
         } catch (Exception e) {
